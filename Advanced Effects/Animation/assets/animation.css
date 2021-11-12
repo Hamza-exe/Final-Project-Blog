@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url("base.css");
+
+
+.flexbox {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+}
+
+
+.bounce, .shake, .rotatex, .rotatey, .rotatez {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+}
+
+.bounce {
+    animation: bounce 2.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 50%, 100% { transform: translateY(0);}
+    25% { transform: translateY(-20px);}
+    75% { transform: translateY(-20px);}
+}
+
+.shake {
+    animation: shake 2.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0);}
+    20%, 80% { transform: translate3d(2px, 0, 0);}
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0);}
+    40%, 60% { transform: translate3d(-1px, 0, 0);}
+}
+
+.rotatex {
+    animation: rotatex 2.5s ease-in-out infinite;
+}
+
+@keyframes rotatex {
+    0%, 50%, 100% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+}
+
+.rotatey {
+    animation: rotatey 2.5s ease-in-out infinite;
+}
+
+@keyframes rotatey {
+    0%, 50%, 100% { transform: rotatey(0deg);}
+    25% { transform: rotatey(180deg);}
+    75% { transform: rotatey(360deg);}
+}
+
+.rotatez {
+    animation: rotatez 2.5s ease-in-out infinite;
+}
+
+@keyframes rotatez {
+    0% { transform: rotatez(0deg);}
+    50% { transform: rotatez(180deg);}
+    100% { transform: rotatez(360deg);}
+}
+
+
+#blue{
+    background-color: rgba(96, 189, 96, 0.507) ;
+    opacity: 0.4;
+    width: 200px;
+    right: 50px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    right: 540px;
+    animation: blue1 2.5s linear infinite;
+}
+
+#heading{
+    margin-top: 120px;
+}
+#green{
+    background-color: rgba(165, 67, 37, 0.616) ;
+    opacity: 0.4;
+    width: 200px;
+    height: 200px;
+    right: 540px;
+    position: absolute;
+    top: 50px;
+    animation: green1 2.5s linear infinite ;
+}
+
+@keyframes blue1 {
+    0% { transform: rotatez(0deg);}
+    40% { transform: rotatez(140deg);}
+    60% { transform: rotatez(210deg);}
+    80% { transform: rotatez(280deg);}
+    100% { transform: rotatez(360deg);}
+}
+
+@keyframes green1 {
+    0% { transform: rotatez(0deg);}
+    50% { transform: rotatez(-180deg);}
+    100% { transform: rotatez(-360deg);}
+}
+
+#content{
+    margin: 0 auto;
+}
