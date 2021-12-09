@@ -246,6 +246,10 @@ a, i {
     font-size: 150%;
 }
 
+.blog p{
+    font-size: 150%;
+}
+
 #about-me h2{
     text-align: center;
 }
@@ -401,6 +405,16 @@ section h2{
 
 @media screen and (min-width: 200px){
 
+
+    hr{
+        max-width: 96%;
+    }
+
+    #blog-heading{
+        max-width: 96%;
+    }
+
+
     .article-page{
         width: 96%;
     }
@@ -480,6 +494,14 @@ section h2{
 
 @media screen and (min-width: 1024px){
 
+    hr{
+        max-width: 70%;
+    }
+
+    #blog-heading{
+        max-width: 70%;
+    }
+
     .article-page{
         max-width: 70%;
     }
@@ -527,10 +549,55 @@ section h2{
 
 /* About Me Page */
 
+
+.article-page h2{
+    font-size: 40px;
+}
+
 #about-me div{
     margin-top: 20px;
     text-align: center;
 }
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: larger;
+  }
+  
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .article-page ul{
+      padding: 0px 40px;
+  }
+
+  .article-page img{
+      margin: 20px 0;
+  }
+  
+  .article-page li {
+      margin-top: 10px;
+      font-size: larger;
+      font-weight: lighter;
+  }
+
+  .article-page ol{
+      padding: 0px 40px;
+  }
+
+  h3, h4{
+      font-weight: lighter;
+  }
+
+  h4{
+    margin-bottom: 20px;
+  }
 
 #about-me a:hover{
     background-color: #c93628;
@@ -564,8 +631,34 @@ section h2{
     box-shadow: 0 28px 48px 0 rgb(59 69 152 / 15%);
 }
 
+hr{
+    border-top: 1px solid rgb(92, 92, 92, 0.4);
+    margin: auto;
+}
+
+#blog-heading{
+    margin: auto;
+    padding: 55px 0px;
+}
+
+#blog-heading h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#blog-heading p{
+    width: 70%;
+    font-size: 25px;
+}
+
 .article-page img{
     width: 100%;
+    height: auto;
+}
+
+
+.article-page-img img{
+    width: 60%;
     height: auto;
 }
 
@@ -576,7 +669,8 @@ section h2{
 }
 
 .article-page p{
-    margin-top: 20px;
+    text-align: justify;
+    margin: 20px 0px;
     line-height: 1.4;
     font-size: 20px;
     font-weight: 300;
